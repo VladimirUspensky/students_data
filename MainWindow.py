@@ -136,7 +136,7 @@ class MainWindow:
         try:
             file_list = self.all_files[self.tree.parent(selected_file)]
         except KeyError:
-            messagebox.showerror('Error', 'Import project')
+            messagebox.showerror('Error', 'Import Project')
         else:
             file_index = self.tree.index(selected_file)
             print(file_index)
